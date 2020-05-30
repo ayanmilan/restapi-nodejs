@@ -8,7 +8,7 @@ const productRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
 const userRoutes = require('./api/routes/users');
 
-mongoose.connect('mongodb+srv://admin:admin@cluster0-pes0o.mongodb.net/node-shop?retryWrites=true&w=majority', (err) => {
+mongoose.connect('<mongo-url>', (err) => {
 	if(err) throw err;
 	else console.log('Database connected!');
 });
